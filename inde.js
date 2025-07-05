@@ -45,7 +45,6 @@ function addtodo() {
   const newbutton = document.createElement("button");
   newbutton.setAttribute("onclick", "deleteTodo(" + currentIndex + ")");
   newbutton.textContent = "Delete";
-
   newtodo.appendChild(newheading);
   newtodo.appendChild(newbutton);
 
