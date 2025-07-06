@@ -22,7 +22,7 @@
 //   element.parentNode.removeChild(element);
 // }
 
-let currentIndex = 3;
+let currentIndex = 1;
 function addtodo() {
   const inputEl = document.getElementById("inp");
   const todoText = inputEl.value.trim();
