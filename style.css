@@ -10,13 +10,16 @@ html,
 body {
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
   width: 100%;
-  height: 100px;
+  height: 11vh;
   background-color: #f1ece6;
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +31,15 @@ body {
 
 .tabs {
   width: 100%;
-  height: 65px;
+  height: 8vh;
   background-color: #f3f3f3;
-  position: fixed;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+}
+
+.tabs:hover {
+  cursor: pointer;
 }
 
 .tb {
@@ -43,12 +48,108 @@ body {
   color: #969696;
   font-weight: 500;
   width: 50%;
+  height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .tb.active {
   color: black;
-  font-weight: bold;
   border-bottom: 5px solid #d98326;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  /* background-color: red; */
+  padding: 2px;
+}
+.todo-input input {
+  background-color: #f1ece6;
+  height: 5rem;
+  padding-left: 40px;
+  width: 40rem;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  display: flex;
+  color: #969696;
+  font-size: 1.6rem;
+}
+.todo-input button {
+  height: 5rem;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  background-color: #76b8cd;
+  width: 8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+  color: #969696;
+}
+
+.todo-input button:hover {
+  cursor: pointer;
+}
+.task-container {
+  width: 48rem;
+  height: 50rem;
+  margin-top: 2rem;
+  background: #f1ece6;
+  border-radius: 50px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.check-circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.check-circle i {
+  display: none;
+  color: #d27b2f;
+  font-size: 18px;
+}
+
+.check-circle .checked {
+  background-color: white;
+  border-color: #d27b2f;
+}
+
+.check-circle .checked i {
+  display: block;
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 1.2rem;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-icon {
+  cursor: pointer;
+  color: #d11;
 }
