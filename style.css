@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Inter";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #f1ece6;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  width: 270px;
+}
+
+.tabs {
+  width: 100%;
+  height: 65px;
+  background-color: #f3f3f3;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.tb {
+  font-size: 50px;
+  border: none;
+  color: #969696;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tb.active {
+  color: black;
+  font-weight: bold;
+  border-bottom: 5px solid #d98326;
+}
