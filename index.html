@@ -5,37 +5,15 @@
 	  <meta name="viewport" content="width=device-width">
 	  <title>replit</title>
 	  <link href="style.css" rel="stylesheet" type="text/css" />
-	  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"/>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-	</head>
 	
-	<header class="header">
-		<img src="./images/todo.png" alt="">
-	</header>
-
-	<div class="tabs">
-		<div class="tb active" data-tab="tab1" onclick="">Personal</div>
-		<div class="tb" data-tab="tab2">Professional</div>
-	</div>
-	<div class="todo-input">
-		<input type="text" placeholder="What do you need to do?" id="todo-input">
-		<button id="add-btn" onclick="addtodo()" >ADD</button>
-</div>
-	<div class="task-container">
-		<div class="task-item">
-  		<span class="check-circle checked"></span>
-  		<span class="edit-text"></span>
-  		<span class="delete-icon"><i class="ri-delete-bin-line"></i></span>
-			
-	</div>
-	<button>Clear Completed</button>
-
-</div>
+	</head>
+	<h1>Todo list</h1>
+  
+  </div>
+  <div id="todos">
+    <input id="inp" type="text">
+    <button onclick="addtodo()">Add Todo</button>
+  </div>
 
 	<script src="index.js"></script>
 	</body>
